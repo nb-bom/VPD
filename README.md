@@ -5,11 +5,11 @@ Code to create vapour pressure deficit (VPD) projections from daily tasmax and h
 
 Equations saturation vapour pressure http://www.bom.gov.au/climate/how/newproducts/images/IDCJHC02_notes.txt
 
-Vapour pressure = exp (1.8096 + (17.269425 * Dew_Point)/(237.3 + Dew_Point))
+Vapour pressure = exp (1.8096 + (17.269425 * Dew_Point)/(237.3 + Dew_Point)) (units hPa)
 
-Saturated Vapour pressure = exp (1.8096 + (17.269425 * Air_Temperature)/(237.3 + Air_Temperature))
+Saturated Vapour pressure = exp (1.8096 + (17.269425 * Air_Temperature)/(237.3 + Air_Temperature)) (units hPa)
 
-Relative Humidity = Vapour pressure / Saturated vapour pressure * 100
+Relative Humidity = Vapour pressure / Saturated vapour pressure * 100 (units percent %)
 
 Rearrange the formulae to get:
 
