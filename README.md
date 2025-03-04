@@ -21,4 +21,8 @@ vpd
 = es - ea = es - (es * rh /100) = (1 - RH/100) * es 
 = (1 - rh/100) * exp (1.8096 + (17.269425 * Air_Temperature)/(237.3 + Air_Temperature)) (units hPa)
 
+In the code, using the specific formula that Blair Trewin has been using from Chris Lucas's work in 2010 http://www.bom.gov.au/research/publications/cawcrreports/CTR_024.pdf
+
+vpd = (1 - ds_rh/100) * 6.1094 * exp ((17.625 * ds_tasmax)/(243.04 + ds_tasmax))
+
 A nice explainer about the relevance of VPD to fire: https://blog.ucsusa.org/carly-phillips/what-is-vapor-pressure-deficit-vpd-and-what-is-its-connection-to-wildfires/
