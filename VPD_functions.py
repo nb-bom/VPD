@@ -55,6 +55,6 @@ def vpd_calc(ds_rh, ds_tasmax, chosen_gwl):
         'institution' : "Bureau of Meteorology",
         'acknowledgement' : "Development of data supported with funding from the Australian Climate Service.",
     }
-    }
+    
     ds_monthly_mean_vpd = xr.Dataset({'monthly_mean_vpd' : monthly_mean_vpd})
     return ds_vpd, ds_monthly_mean_vpd
